@@ -19,6 +19,10 @@
          height: 100%;
          font-family: 'PT Sans', sans-serif;
          scroll-behavior: smooth;
+         background-image: url(images/background.png);
+         background-repeat: no-repeat;
+         background-size:contain;
+         background-position: center;
          }
          .faded {
          opacity: 0.8
@@ -51,7 +55,7 @@
          .course {
          margin: 0 10px;
          padding: 20px;
-         background-color: #eeeeee;
+         background-color: lightgray;
          border-radius: 5px;
          display: flex;
          justify-content: center;
@@ -67,40 +71,41 @@
          .next a {
          color: rgb(33, 37, 41);
          }
+         #courses{
+         font-size: 25px;
+         padding-top: 0;
+         }
+         p{
+         padding: 0;
+         margin: 0;
+         }
+         #education{
+         padding-top: 70px;
+         padding-bottom:50px;
+         margin-bottom:50px;
+         }
+         #temple, #montco{
+         width:1000px;
+         }
+         h4{
+         padding-bottom: 100px;
+         margin-top: 0;
+         color:#695E93;
+         width:850px;
+         text-align: justify;
+         }
          nav{
          background-color: #4C5270;
          color:white;
          }
-         #profileimage{
-         border-radius: 50%;
-         width:146px;
-         height:150px;
-         margin-bottom: 20px;
+         #technicalskills, #courses{
+         color:#695E93;  
+         font-size: 25px;
          }
-         h4{
-         color:#695E93;
-         }
-         h5{
-         color:#8155BA;
-         }
-         button {
-         background-color: #695E93;
-         height: 50px;
-         width: 130px;
-         border: none;
-         border-radius: 5px;
-         font-size: 16px;
-         color: white;
-         position: relative;
-         margin-left: 20px;
-         }
-         a{
-         text-decoration: none;
-         color:white;
-         }
-         a:hover{
-         text-decoration: none;
-         color:white;
+         #jsimage{
+         padding-bottom: 5px;
+         padding-left: 0px;
+         margin: 0px;
          }
          li{
          font-size: 18px;
@@ -116,7 +121,7 @@
          </button>
          <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                 <li class="nav-item">
+               <li class="nav-item">
                   <a class="nav-link" href="about.html">About</a>
                </li>
                <li class="nav-item">
@@ -132,19 +137,20 @@
          </div>
       </nav>
       <div class="container landing d-flex justify-content-center flex-column align-items-center" >
-         <img src="images/profileimage.png" id="profileimage">     
-         <div class="row mx-auto">
-            <h4 class="display-4 font-weight-bold mx-auto text-center">Hi, I'm Charmy!</h4>
-         </div>
-         <div class="row mx-auto">
-            <h5 class="display-5 mx-auto faded text-center">I'm a senior Information Science & Technology Student at Temple University.
-            </h5>
-            <br>
-         </div>
-         <div>
-            <br>
-            <button><a href="about.html">Learn More </a></button>
-         </div>
+         <h4>I've lived in Hatfield my entire life. I love dogs and used to have a pomeranian named Rocky. In my free time I enjoy anything art related, photography and learning about film. I'm a huge Grey's Anatomy fan. Want to know more about me? Check out my <a href="education.html">education</a>, <a href="experience.html">experience</a>, and <a href="projects.html">projects</a> pages!</h4>
       </div>
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+      <script>
+         $(function () {
+             $('[data-toggle="tooltip"]').tooltip()
+         })
+      </script>
    </body>
 </html>
